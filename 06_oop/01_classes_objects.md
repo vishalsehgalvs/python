@@ -11,6 +11,7 @@
 > 🔁 **Analogy:** A class is a blueprint. A dog blueprint says "dogs have a name, breed, and can bark." An object is an actual dog built from that blueprint — "Buddy, Golden Retriever."
 
 The four pillars:
+
 - **Encapsulation** — bundle data + methods; hide internals
 - **Inheritance** — new class inherits from existing class
 - **Polymorphism** — same method name, different behavior per class
@@ -188,6 +189,7 @@ print(account.get_balance())   # 50
 ```
 
 ### Double underscore `__` — name mangling:
+
 ```python
 class Circle:
     def __init__(self, radius):

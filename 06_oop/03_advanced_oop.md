@@ -8,7 +8,7 @@
 
 An **abstract class** is a class that **cannot be instantiated** — it's a template that child classes must complete.
 
-> 🔁 **Analogy:** An abstract class is like a job description that says "must be able to drive a vehicle." It doesn't matter if it's a car, truck, or bus — but you *must* implement driving. You can't hire the job description itself; you hire someone who fills it.
+> 🔁 **Analogy:** An abstract class is like a job description that says "must be able to drive a vehicle." It doesn't matter if it's a car, truck, or bus — but you _must_ implement driving. You can't hire the job description itself; you hire someone who fills it.
 
 ```python
 from abc import ABC, abstractmethod
@@ -64,24 +64,26 @@ You can define what operators (`+`, `-`, `*`, `==`, `<`, etc.) do for your custo
 > 🔁 **Analogy:** Operator overloading is like teaching a calculator new rules. By default, `+` adds numbers. But for a `Vector` object, you can define `+` to mean "add corresponding components."
 
 ### Common dunder methods:
-| Operator | Method |
-|----------|--------|
-| `+` | `__add__(self, other)` |
-| `-` | `__sub__(self, other)` |
-| `*` | `__mul__(self, other)` |
-| `/` | `__truediv__(self, other)` |
-| `==` | `__eq__(self, other)` |
-| `!=` | `__ne__(self, other)` |
-| `<` | `__lt__(self, other)` |
-| `>` | `__gt__(self, other)` |
-| `<=` | `__le__(self, other)` |
-| `>=` | `__ge__(self, other)` |
-| `len()` | `__len__(self)` |
-| `str()` / `print()` | `__str__(self)` |
-| `repr()` | `__repr__(self)` |
-| `[]` | `__getitem__(self, key)` |
+
+| Operator            | Method                     |
+| ------------------- | -------------------------- |
+| `+`                 | `__add__(self, other)`     |
+| `-`                 | `__sub__(self, other)`     |
+| `*`                 | `__mul__(self, other)`     |
+| `/`                 | `__truediv__(self, other)` |
+| `==`                | `__eq__(self, other)`      |
+| `!=`                | `__ne__(self, other)`      |
+| `<`                 | `__lt__(self, other)`      |
+| `>`                 | `__gt__(self, other)`      |
+| `<=`                | `__le__(self, other)`      |
+| `>=`                | `__ge__(self, other)`      |
+| `len()`             | `__len__(self)`            |
+| `str()` / `print()` | `__str__(self)`            |
+| `repr()`            | `__repr__(self)`           |
+| `[]`                | `__getitem__(self, key)`   |
 
 ### Vector example:
+
 ```python
 class Vector:
     def __init__(self, x, y):
@@ -120,6 +122,7 @@ print(len(v1))    # 2
 ```
 
 ### Book example:
+
 ```python
 class Book:
     def __init__(self, title, pages):
@@ -209,12 +212,12 @@ m = MathHelper()
 print(m.add(1, 2))   # 3 (can also call on instance, but unusual)
 ```
 
-| | `@staticmethod` | `@classmethod` | Regular method |
-|---|----------------|----------------|----------------|
-| First arg | None | `cls` (class) | `self` (instance) |
-| Can access class attrs | ❌ | ✅ | ✅ |
-| Can access instance attrs | ❌ | ❌ | ✅ |
-| Use case | Utility functions | Factory methods, alt constructors | Instance behavior |
+|                           | `@staticmethod`   | `@classmethod`                    | Regular method    |
+| ------------------------- | ----------------- | --------------------------------- | ----------------- |
+| First arg                 | None              | `cls` (class)                     | `self` (instance) |
+| Can access class attrs    | ❌                | ✅                                | ✅                |
+| Can access instance attrs | ❌                | ❌                                | ✅                |
+| Use case                  | Utility functions | Factory methods, alt constructors | Instance behavior |
 
 ---
 
