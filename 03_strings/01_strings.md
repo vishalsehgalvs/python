@@ -24,12 +24,14 @@ multiline"""
 ## Comments and Docstrings
 
 ### Single-line comments
+
 ```python
 # This is a comment
 x = 10  # This is an inline comment
 ```
 
 ### Multi-line comments
+
 ```python
 '''
 This is a
@@ -39,6 +41,7 @@ multiline comment
 ```
 
 ### Docstrings — document your code
+
 ```python
 def add(a, b):
     """
@@ -90,6 +93,7 @@ print(s[::-1])  # olleH (reverse string!)
 ## Common String Methods
 
 ### Case methods
+
 ```python
 s = "Hello, World!"
 
@@ -101,6 +105,7 @@ print(s.swapcase())    # "hELLO, wORLD!"  (swaps cases)
 ```
 
 ### Strip (remove whitespace or characters)
+
 ```python
 s = "  Hello, World!  "
 print(s.strip())        # "Hello, World!"   (both ends)
@@ -113,6 +118,7 @@ print(s.strip("*"))     # "Hello"
 ```
 
 ### Find and search
+
 ```python
 s = "Hello, World!"
 
@@ -128,6 +134,7 @@ print(s.count("l"))       # 3  (how many times "l" appears)
 ```
 
 ### Replace
+
 ```python
 s = "Hello, World!"
 print(s.replace("World", "Python"))   # "Hello, Python!"
@@ -138,6 +145,7 @@ print(s.replace("a", "b", 2))   # "bba" (only first 2)
 ```
 
 ### Split and join
+
 ```python
 # split — break string into list
 s = "Hello, World!"
@@ -155,6 +163,7 @@ print("".join(words))      # "HelloWorld"
 ```
 
 ### Check content
+
 ```python
 print("123".isdigit())     # True  — all digits?
 print("abc".isalpha())     # True  — all letters?
@@ -166,6 +175,7 @@ print("Hello World".istitle())  # True — title case?
 ```
 
 ### Format
+
 ```python
 template = "Hello, {name}! Welcome to {place}."
 print(template.format(name="Alice", place="Wonderland"))
