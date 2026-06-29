@@ -66,6 +66,7 @@ for i in range(5, 0, -1):
 ```
 
 ### `for` with `enumerate()` — index + value:
+
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -77,6 +78,7 @@ for index, fruit in enumerate(fruits):
 ```
 
 ### `for` over a string:
+
 ```python
 for char in "Hello":
     print(char)
@@ -108,6 +110,7 @@ condition True?
 ```
 
 ### User input validation with `while`:
+
 ```python
 number = int(input("Enter a number between 1 and 10: "))
 
@@ -119,6 +122,7 @@ print(f"Valid: {number}")
 ```
 
 ### Menu with `while`:
+
 ```python
 choice = ""
 
@@ -149,6 +153,7 @@ for i in range(10):
 ```
 
 ### Practical: search in list
+
 ```python
 numbers = [4, 7, 2, 9, 1, 5]
 target = 9
@@ -242,6 +247,7 @@ else:
 ```
 
 Useful for search patterns:
+
 ```python
 numbers = [1, 2, 3, 4, 5]
 target = 9
@@ -286,12 +292,12 @@ for i in range(1, 6):
 
 ## Choosing the Right Loop
 
-| Situation | Use |
-|-----------|-----|
-| Know how many times to repeat | `for` with `range()` |
+| Situation                           | Use                      |
+| ----------------------------------- | ------------------------ |
+| Know how many times to repeat       | `for` with `range()`     |
 | Iterate over items in a list/string | `for item in collection` |
-| Repeat until condition changes | `while` |
-| Run at least once | `while True` + `break` |
+| Repeat until condition changes      | `while`                  |
+| Run at least once                   | `while True` + `break`   |
 
 ---
 
