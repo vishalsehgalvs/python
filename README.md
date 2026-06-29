@@ -105,14 +105,14 @@ double = lambda x: x * 2
 
 ## Python vs Other Languages
 
-| Feature | Python | JavaScript | C++ |
-|---------|--------|------------|-----|
-| Typing | Dynamic | Dynamic | Static |
-| Syntax | Indentation | `{}` braces | `{}` braces |
-| Compilation | Interpreted | Interpreted/JIT | Compiled |
-| Speed | Slower | Medium | Fastest |
-| Use cases | Data, AI, scripting | Web frontend/backend | Systems, games |
-| Learning curve | Easiest | Medium | Hard |
+| Feature        | Python              | JavaScript           | C++            |
+| -------------- | ------------------- | -------------------- | -------------- |
+| Typing         | Dynamic             | Dynamic              | Static         |
+| Syntax         | Indentation         | `{}` braces          | `{}` braces    |
+| Compilation    | Interpreted         | Interpreted/JIT      | Compiled       |
+| Speed          | Slower              | Medium               | Fastest        |
+| Use cases      | Data, AI, scripting | Web frontend/backend | Systems, games |
+| Learning curve | Easiest             | Medium               | Hard           |
 
 ---
 
