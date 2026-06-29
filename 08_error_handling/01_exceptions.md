@@ -78,6 +78,7 @@ print(safe_divide("a", 2))   # Error: Both arguments must be numbers → None
 ```
 
 ### Catch multiple in one `except`:
+
 ```python
 try:
     x = int(input("Enter a number: "))
@@ -87,6 +88,7 @@ except (ValueError, ZeroDivisionError) as e:
 ```
 
 ### Catch any exception:
+
 ```python
 try:
     risky_operation()
@@ -98,19 +100,19 @@ except Exception as e:
 
 ## Common Built-in Exceptions
 
-| Exception | When it happens |
-|-----------|----------------|
-| `ValueError` | Wrong value type (e.g., `int("abc")`) |
-| `TypeError` | Wrong type (e.g., `"a" + 1`) |
-| `ZeroDivisionError` | Dividing by zero |
-| `IndexError` | List index out of range |
-| `KeyError` | Dictionary key not found |
-| `AttributeError` | Object has no such attribute |
-| `FileNotFoundError` | File doesn't exist |
-| `ImportError` | Module not found |
-| `NameError` | Variable not defined |
-| `RecursionError` | Too much recursion (infinite loop) |
-| `OverflowError` | Number too large |
+| Exception           | When it happens                       |
+| ------------------- | ------------------------------------- |
+| `ValueError`        | Wrong value type (e.g., `int("abc")`) |
+| `TypeError`         | Wrong type (e.g., `"a" + 1`)          |
+| `ZeroDivisionError` | Dividing by zero                      |
+| `IndexError`        | List index out of range               |
+| `KeyError`          | Dictionary key not found              |
+| `AttributeError`    | Object has no such attribute          |
+| `FileNotFoundError` | File doesn't exist                    |
+| `ImportError`       | Module not found                      |
+| `NameError`         | Variable not defined                  |
+| `RecursionError`    | Too much recursion (infinite loop)    |
+| `OverflowError`     | Number too large                      |
 
 ---
 
@@ -159,6 +161,7 @@ except ValueError as e:
 ```
 
 ### Re-raise an exception:
+
 ```python
 def process():
     try:

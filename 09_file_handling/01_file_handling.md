@@ -23,15 +23,16 @@ file.close()
 ```
 
 ### File modes:
-| Mode | Meaning |
-|------|---------|
-| `"r"` | Read (default). Error if file doesn't exist |
-| `"w"` | Write. Creates file if not exist. **Overwrites** content |
-| `"a"` | Append. Creates if not exist. Adds to end |
-| `"x"` | Create. Error if file already exists |
-| `"r+"` | Read + write |
-| `"rb"` | Read binary (images, PDFs, etc.) |
-| `"wb"` | Write binary |
+
+| Mode   | Meaning                                                  |
+| ------ | -------------------------------------------------------- |
+| `"r"`  | Read (default). Error if file doesn't exist              |
+| `"w"`  | Write. Creates file if not exist. **Overwrites** content |
+| `"a"`  | Append. Creates if not exist. Adds to end                |
+| `"x"`  | Create. Error if file already exists                     |
+| `"r+"` | Read + write                                             |
+| `"rb"` | Read binary (images, PDFs, etc.)                         |
+| `"wb"` | Write binary                                             |
 
 ---
 

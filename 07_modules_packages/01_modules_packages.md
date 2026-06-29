@@ -25,6 +25,7 @@ print(math.floor(4.9))  # 4
 ```
 
 ### `from` import — import specific things:
+
 ```python
 from math import pi, sqrt, ceil
 
@@ -34,6 +35,7 @@ print(ceil(3.1)) # 4
 ```
 
 ### `as` — import with alias:
+
 ```python
 import numpy as np           # common alias
 import pandas as pd
@@ -45,6 +47,7 @@ today = dt.now()
 ```
 
 ### Import everything (avoid this!):
+
 ```python
 from math import *    # imports ALL names from math
 
@@ -95,6 +98,7 @@ print(now)                   # 2024-01-15 10:30:45.123456
 ## Creating Your Own Module
 
 Create a file `greetings.py`:
+
 ```python
 # greetings.py
 def say_hello(name):
@@ -107,6 +111,7 @@ DEFAULT_GREETING = "Hi"
 ```
 
 Use it in another file in the same folder:
+
 ```python
 # main.py
 import greetings
@@ -124,6 +129,7 @@ print(say_goodbye("Bob"))               # Goodbye, Bob!
 ## `__name__ == "__main__"`
 
 Every Python file has a `__name__` variable:
+
 - When run directly: `__name__` is `"__main__"`
 - When imported: `__name__` is the module's filename
 
@@ -207,6 +213,7 @@ pip freeze > requirements.txt
 ```
 
 ### `requirements.txt` example:
+
 ```
 requests==2.28.0
 numpy>=1.21.0
