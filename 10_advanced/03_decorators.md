@@ -48,6 +48,7 @@ print(triple(5))   # 15
 ## Creating a Decorator
 
 A decorator wraps a function by:
+
 1. Taking the original function as an argument
 2. Defining a wrapper function inside
 3. Returning the wrapper
@@ -129,6 +130,7 @@ greet("Alice", greeting="Hey")   # Calling greet → Hey, Alice! → Finished gr
 ## Real-World Decorator Examples
 
 ### Timing decorator:
+
 ```python
 import time
 import functools
@@ -153,6 +155,7 @@ slow_function()
 ```
 
 ### Logging decorator:
+
 ```python
 import functools
 
@@ -175,6 +178,7 @@ multiply(3, 4)
 ```
 
 ### Caching decorator (manual):
+
 ```python
 def memoize(func):
     cache = {}
@@ -197,7 +201,7 @@ print(fibonacci(50))   # fast!
 
 ## Decorators with Parameters
 
-A decorator factory — a function that *returns* a decorator:
+A decorator factory — a function that _returns_ a decorator:
 
 ```python
 def repeat(n):          # outer: takes parameter

@@ -93,6 +93,7 @@ absolute = [x if x >= 0 else -x for x in nums]
 ## Nested List Comprehension
 
 Flatten a 2D list:
+
 ```python
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
@@ -108,6 +109,7 @@ flat = [item for row in matrix for item in row]
 ```
 
 Multiplication table:
+
 ```python
 table = [[row * col for col in range(1, 4)] for row in range(1, 4)]
 # [[1, 2, 3],

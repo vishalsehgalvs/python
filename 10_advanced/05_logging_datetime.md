@@ -8,13 +8,13 @@
 
 ### Why Not Just Use `print()`?
 
-| `print()` | `logging` |
-|-----------|-----------|
+| `print()`          | `logging`                             |
+| ------------------ | ------------------------------------- |
 | No severity levels | DEBUG, INFO, WARNING, ERROR, CRITICAL |
-| Can't filter | Filter by level |
-| No timestamps | Can include timestamps |
-| No file output | Can write to files |
-| Hard to disable | Easy to enable/disable |
+| Can't filter       | Filter by level                       |
+| No timestamps      | Can include timestamps                |
+| No file output     | Can write to files                    |
+| Hard to disable    | Easy to enable/disable                |
 
 > 🔁 **Analogy:** `print()` is like shouting everything to the room. `logging` is like a professional reporting system with labels — "this is urgent (ERROR)", "this is routine (INFO)", "this is for debugging (DEBUG)".
 
@@ -73,14 +73,15 @@ logging.critical("System is down!")
 ```
 
 ### Format variables:
-| Variable | Description |
-|----------|-------------|
-| `%(asctime)s` | Timestamp |
+
+| Variable        | Description                    |
+| --------------- | ------------------------------ |
+| `%(asctime)s`   | Timestamp                      |
 | `%(levelname)s` | Level name (DEBUG, INFO, etc.) |
-| `%(message)s` | The log message |
-| `%(name)s` | Logger name |
-| `%(filename)s` | Source file |
-| `%(lineno)d` | Line number |
+| `%(message)s`   | The log message                |
+| `%(name)s`      | Logger name                    |
+| `%(filename)s`  | Source file                    |
+| `%(lineno)d`    | Line number                    |
 
 ---
 
@@ -195,20 +196,21 @@ print(now.strftime("%A, %B %d, %Y"))      # Monday, January 15, 2024
 ```
 
 ### Common format codes:
-| Code | Meaning | Example |
-|------|---------|---------|
-| `%Y` | 4-digit year | 2024 |
-| `%m` | Month (01–12) | 01 |
-| `%d` | Day (01–31) | 15 |
-| `%H` | Hour 24h (00–23) | 14 |
-| `%I` | Hour 12h (01–12) | 02 |
-| `%M` | Minute (00–59) | 30 |
-| `%S` | Second (00–59) | 45 |
-| `%p` | AM/PM | PM |
-| `%A` | Full weekday | Monday |
-| `%B` | Full month name | January |
-| `%a` | Abbreviated weekday | Mon |
-| `%b` | Abbreviated month | Jan |
+
+| Code | Meaning             | Example |
+| ---- | ------------------- | ------- |
+| `%Y` | 4-digit year        | 2024    |
+| `%m` | Month (01–12)       | 01      |
+| `%d` | Day (01–31)         | 15      |
+| `%H` | Hour 24h (00–23)    | 14      |
+| `%I` | Hour 12h (01–12)    | 02      |
+| `%M` | Minute (00–59)      | 30      |
+| `%S` | Second (00–59)      | 45      |
+| `%p` | AM/PM               | PM      |
+| `%A` | Full weekday        | Monday  |
+| `%B` | Full month name     | January |
+| `%a` | Abbreviated weekday | Mon     |
+| `%b` | Abbreviated month   | Jan     |
 
 ---
 
@@ -286,6 +288,7 @@ print(dt)   # 2024-06-15 14:30:00
 ## Key Takeaways
 
 **Logging:**
+
 - Use `logging` instead of `print()` for production code
 - Levels: `DEBUG < INFO < WARNING < ERROR < CRITICAL`
 - `logging.basicConfig(level=..., format=..., handlers=[...])` to configure
@@ -293,6 +296,7 @@ print(dt)   # 2024-06-15 14:30:00
 - Log to files with `FileHandler`; console with `StreamHandler`
 
 **Datetime:**
+
 - `datetime.now()` — current date and time
 - `date.today()` — current date only
 - `strftime(format)` — datetime → string (format for display)

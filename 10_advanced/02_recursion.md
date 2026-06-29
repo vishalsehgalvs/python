@@ -11,6 +11,7 @@ Recursion is when a **function calls itself** to solve a smaller version of the 
 > 🔁 **Analogy:** Imagine you're in a line of people, and you want to know what position you're in. You ask the person in front of you. They ask the person in front of them. This continues until the first person (who knows they're #1) tells the next person, who adds 1 and tells the next... until the answer reaches you. That's recursion!
 
 Every recursive function needs:
+
 1. **Base case** — the stopping condition (no more recursion)
 2. **Recursive case** — the function calling itself with a smaller problem
 
@@ -48,6 +49,7 @@ print(factorial(0))   # 1
 ```
 
 How it works:
+
 ```
 factorial(5)
   = 5 * factorial(4)
@@ -147,13 +149,13 @@ sys.setrecursionlimit(5000)
 
 ## Recursion vs Iteration
 
-| | Recursion | Iteration (loops) |
-|---|-----------|-------------------|
-| Code style | Elegant, closer to math definition | More explicit |
-| Performance | Slower (function call overhead, stack) | Faster |
-| Memory | More (call stack) | Less |
-| Risk | RecursionError if too deep | No depth limit |
-| Best for | Trees, graphs, divide-and-conquer | Simple counting, loops |
+|             | Recursion                              | Iteration (loops)      |
+| ----------- | -------------------------------------- | ---------------------- |
+| Code style  | Elegant, closer to math definition     | More explicit          |
+| Performance | Slower (function call overhead, stack) | Faster                 |
+| Memory      | More (call stack)                      | Less                   |
+| Risk        | RecursionError if too deep             | No depth limit         |
+| Best for    | Trees, graphs, divide-and-conquer      | Simple counting, loops |
 
 ```python
 # Factorial: recursion
