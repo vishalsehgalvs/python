@@ -18,6 +18,7 @@ is_active = True  # boolean variable
 ```
 
 ### Rules for variable names:
+
 - Can contain letters, numbers, and underscores `_`
 - **Must start** with a letter or underscore (not a number)
 - Case-sensitive (`age` and `Age` are different!)
@@ -32,7 +33,9 @@ my-var = 5          # ❌ hyphens not allowed
 ```
 
 ### Python is dynamically typed:
+
 No need to declare the type — Python figures it out from the value:
+
 ```python
 x = 10       # x is int
 x = "hello"  # now x is a string — that's fine!
@@ -92,6 +95,7 @@ is_active = True
 ```
 
 ### Check type with `type()`:
+
 ```python
 x = 10
 print(type(x))        # <class 'int'>
@@ -200,13 +204,13 @@ class Dog:       # class keyword
 
 ## Naming Conventions (PEP 8)
 
-| Style | Use for | Example |
-|-------|---------|---------|
-| `snake_case` | Variables, functions | `my_variable`, `get_name()` |
-| `PascalCase` | Classes | `MyClass`, `BankAccount` |
-| `SCREAMING_SNAKE` | Constants | `MAX_SIZE`, `PI` |
-| `_single_underscore` | "Private" variables | `_internal_use` |
-| `__double_underscore` | Name mangling | `__private_attr` |
+| Style                 | Use for              | Example                     |
+| --------------------- | -------------------- | --------------------------- |
+| `snake_case`          | Variables, functions | `my_variable`, `get_name()` |
+| `PascalCase`          | Classes              | `MyClass`, `BankAccount`    |
+| `SCREAMING_SNAKE`     | Constants            | `MAX_SIZE`, `PI`            |
+| `_single_underscore`  | "Private" variables  | `_internal_use`             |
+| `__double_underscore` | Name mangling        | `__private_attr`            |
 
 ```python
 # ✅ Good naming

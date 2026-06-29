@@ -19,6 +19,7 @@ print("Name:", name, "Age:", age)  # Name: Alice Age: 30
 ```
 
 ### `sep` and `end` parameters:
+
 ```python
 # sep: change separator (default is space)
 print("A", "B", "C")               # A B C
@@ -40,6 +41,7 @@ print("B")
 ## String Formatting — 3 Ways
 
 ### Method 1: Concatenation with `+`
+
 ```python
 name = "Alice"
 age = 30
@@ -47,6 +49,7 @@ print("Name: " + name + ", Age: " + str(age))  # must convert to str!
 ```
 
 ### Method 2: `.format()` method
+
 ```python
 name = "Alice"
 age = 30
@@ -56,6 +59,7 @@ print("Name: {name}, Age: {age}".format(name=name, age=age))  # named
 ```
 
 ### Method 3: f-strings (Python 3.6+ — recommended ✅)
+
 ```python
 name = "Alice"
 age = 30
@@ -88,17 +92,17 @@ print("Backslash: \\")     # backslash     → Backslash: \
 print("\r Overwritten")    # carriage return (go to line start)
 ```
 
-| Escape | Meaning |
-|--------|---------|
-| `\n` | Newline |
-| `\t` | Horizontal tab |
-| `\\` | Literal backslash `\` |
-| `\'` | Single quote in single-quoted string |
-| `\"` | Double quote in double-quoted string |
-| `\r` | Carriage return |
-| `\a` | ASCII bell (beep sound) |
-| `\b` | Backspace |
-| `\0` | Null character |
+| Escape | Meaning                              |
+| ------ | ------------------------------------ |
+| `\n`   | Newline                              |
+| `\t`   | Horizontal tab                       |
+| `\\`   | Literal backslash `\`                |
+| `\'`   | Single quote in single-quoted string |
+| `\"`   | Double quote in double-quoted string |
+| `\r`   | Carriage return                      |
+| `\a`   | ASCII bell (beep sound)              |
+| `\b`   | Backspace                            |
+| `\0`   | Null character                       |
 
 ---
 

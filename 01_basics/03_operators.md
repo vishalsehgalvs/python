@@ -7,6 +7,7 @@
 ## Types of Operators
 
 Python has 7 types of operators:
+
 ```
 Arithmetic    → +  -  *  /  %  **  //
 Relational    → ==  !=  >  <  >=  <=
@@ -84,6 +85,7 @@ print(not (5 > 3))       # False
 ```
 
 ### Short-circuit evaluation:
+
 ```python
 # "and" stops at first False
 False and print("never runs")   # print never executes!

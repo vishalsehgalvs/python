@@ -11,6 +11,7 @@ Python is a **high-level, interpreted, general-purpose** programming language cr
 > 🔁 **Analogy:** If C++ is like driving a manual sports car — powerful but complex — Python is like a self-driving car. You can still go fast, but it handles all the gears for you so you can focus on where you're going.
 
 **Key features:**
+
 - **Readable syntax** — code looks almost like plain English
 - **Dynamically typed** — no need to declare variable types
 - **Cross-platform** — runs on Windows, Mac, Linux
@@ -39,6 +40,7 @@ Python
 ## Installation
 
 ### Windows
+
 1. Go to https://www.python.org/downloads/
 2. Download the latest Python 3.x installer
 3. ✅ **CHECK "Add Python to PATH"** during installation (important!)
@@ -46,12 +48,14 @@ Python
 5. Verify: open Command Prompt → type `python --version`
 
 ### macOS
+
 1. macOS comes with Python 2 (old/unsupported) — you need Python 3
 2. Go to https://www.python.org/downloads/
 3. Download the macOS installer and run it
 4. Verify: open Terminal → type `python3 --version`
 
 ### Quick Verification
+
 ```bash
 python --version      # Windows
 python3 --version     # Mac/Linux
@@ -91,12 +95,14 @@ print("Welcome to Python!")
 ```
 
 Run it:
+
 ```bash
 python hello.py          # Windows
 python3 hello.py         # Mac/Linux
 ```
 
 Output:
+
 ```
 Hello, World!
 Welcome to Python!
@@ -129,26 +135,26 @@ Unlike C++, Python doesn't need a separate compile step — the interpreter hand
 
 ## Python vs JavaScript vs C++ Quick Compare
 
-| | Python | JavaScript | C++ |
-|---|--------|------------|-----|
-| Hello World | `print("Hello")` | `console.log("Hello")` | `cout << "Hello";` |
-| Variables | `x = 5` | `let x = 5` | `int x = 5;` |
-| Types | Dynamic | Dynamic | Static |
-| Semicolons | ❌ No | ✅ (optional) | ✅ Required |
-| Indentation | ✅ Required (defines blocks) | Style only | Style only |
-| Speed | Slower | Medium | Fastest |
+|             | Python                       | JavaScript             | C++                |
+| ----------- | ---------------------------- | ---------------------- | ------------------ |
+| Hello World | `print("Hello")`             | `console.log("Hello")` | `cout << "Hello";` |
+| Variables   | `x = 5`                      | `let x = 5`            | `int x = 5;`       |
+| Types       | Dynamic                      | Dynamic                | Static             |
+| Semicolons  | ❌ No                        | ✅ (optional)          | ✅ Required        |
+| Indentation | ✅ Required (defines blocks) | Style only             | Style only         |
+| Speed       | Slower                       | Medium                 | Fastest            |
 
 ---
 
 ## Recommended Tools
 
-| Tool | Use | Where |
-|------|-----|-------|
-| **VS Code** | Code editor | code.visualstudio.com |
-| **PyCharm** | Python IDE | jetbrains.com/pycharm |
-| **Jupyter Notebook** | Data science | jupyter.org |
-| **IDLE** | Comes with Python | Built-in |
-| **Replit** | Online browser IDE | replit.com |
+| Tool                 | Use                | Where                 |
+| -------------------- | ------------------ | --------------------- |
+| **VS Code**          | Code editor        | code.visualstudio.com |
+| **PyCharm**          | Python IDE         | jetbrains.com/pycharm |
+| **Jupyter Notebook** | Data science       | jupyter.org           |
+| **IDLE**             | Comes with Python  | Built-in              |
+| **Replit**           | Online browser IDE | replit.com            |
 
 ---
 
