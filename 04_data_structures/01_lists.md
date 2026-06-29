@@ -66,6 +66,7 @@ print(fruits)   # ['mango', 'grape', 'cherry']
 ## Common List Methods
 
 ### Add elements
+
 ```python
 numbers = [1, 2, 3]
 
@@ -76,6 +77,7 @@ numbers += [8, 9]              # also extends → [1, 99, 2, 3, 4, 5, 6, 7, 8, 9
 ```
 
 ### Remove elements
+
 ```python
 numbers = [1, 2, 3, 2, 4]
 
@@ -90,6 +92,7 @@ numbers.clear()         # empties the list → []
 ```
 
 ### Search
+
 ```python
 fruits = ["apple", "banana", "cherry", "apple"]
 
@@ -100,6 +103,7 @@ print("grape" in fruits)        # False
 ```
 
 ### Sort and reverse
+
 ```python
 numbers = [3, 1, 4, 2, 5]
 
@@ -121,6 +125,7 @@ words.sort(key=len)                 # sort by length
 ```
 
 ### Copy
+
 ```python
 original = [1, 2, 3]
 

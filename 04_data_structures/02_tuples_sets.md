@@ -23,6 +23,7 @@ coords = 10, 20, 30    # (10, 20, 30)
 > ⚠️ `(42)` is just `42` (an integer in parentheses). You need `(42,)` with a comma for a single-element tuple.
 
 ### Accessing tuple elements (same as list):
+
 ```python
 t = ("apple", "banana", "cherry")
 
@@ -32,12 +33,14 @@ print(t[1:])   # ('banana', 'cherry')
 ```
 
 ### Tuple is immutable — cannot be changed:
+
 ```python
 t = (1, 2, 3)
 # t[0] = 99     # ❌ TypeError: 'tuple' object does not support item assignment
 ```
 
 ### Tuple methods (only 2!):
+
 ```python
 t = (1, 2, 3, 2, 4, 2)
 
@@ -46,6 +49,7 @@ print(t.index(3))    # 2  — index of first occurrence of 3
 ```
 
 ### Tuple unpacking:
+
 ```python
 point = (10, 20)
 x, y = point           # unpack into variables
@@ -63,13 +67,14 @@ print(z)       # 5
 ```
 
 ### When to use tuples vs lists:
-| | Tuple | List |
-|---|-------|------|
-| Mutable? | ❌ No | ✅ Yes |
-| Syntax | `(1, 2, 3)` | `[1, 2, 3]` |
-| Use when | Data won't change | Data will change |
-| Examples | `(x, y)` coordinates, RGB color, function return values | Shopping cart, student list |
-| Performance | Slightly faster | Slightly slower |
+
+|             | Tuple                                                   | List                        |
+| ----------- | ------------------------------------------------------- | --------------------------- |
+| Mutable?    | ❌ No                                                   | ✅ Yes                      |
+| Syntax      | `(1, 2, 3)`                                             | `[1, 2, 3]`                 |
+| Use when    | Data won't change                                       | Data will change            |
+| Examples    | `(x, y)` coordinates, RGB color, function return values | Shopping cart, student list |
+| Performance | Slightly faster                                         | Slightly slower             |
 
 ---
 
@@ -96,6 +101,7 @@ print(s)   # could print in any order!
 ```
 
 ### Add and remove:
+
 ```python
 fruits = {"apple", "banana"}
 
@@ -110,6 +116,7 @@ fruits.clear()                 # empties set
 ```
 
 ### Check membership:
+
 ```python
 fruits = {"apple", "banana", "cherry"}
 print("apple" in fruits)       # True
@@ -118,6 +125,7 @@ print("grape" not in fruits)   # True
 ```
 
 ### Set Operations (the real power of sets!):
+
 ```python
 a = {1, 2, 3, 4, 5}
 b = {3, 4, 5, 6, 7}
@@ -150,6 +158,7 @@ Sym. diff:      {1, 2,       6, 7}
 ```
 
 ### Subset/superset checks:
+
 ```python
 a = {1, 2, 3}
 b = {1, 2, 3, 4, 5}
