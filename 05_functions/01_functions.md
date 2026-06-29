@@ -11,6 +11,7 @@ A function is a **named, reusable block of code** that performs a specific task.
 > 🔁 **Analogy:** A function is like a recipe. You write it once ("how to make pasta"), and anyone can follow it anytime. You don't rewrite the recipe each time you cook — you just say "make pasta."
 
 **Why use functions?**
+
 - **Reusability** — write once, use many times
 - **Readability** — break code into named, understandable pieces
 - **Maintainability** — fix a bug in one place, not everywhere
@@ -97,6 +98,7 @@ greet("Carol", "Goodbye")   # Goodbye, Carol!
 ```
 
 > ⚠️ Default parameters must come LAST:
+
 ```python
 def f(a, b=5, c=10):  # ✅ OK
     pass
@@ -110,7 +112,9 @@ def f(a=5, b, c=10):  # ❌ SyntaxError: non-default argument follows default
 ## Types of Arguments
 
 ### Positional arguments:
+
 Matched by **position** in order:
+
 ```python
 def describe(name, age, city):
     print(f"{name}, {age}, from {city}")
@@ -119,12 +123,15 @@ describe("Alice", 30, "Seattle")   # Alice, 30, from Seattle
 ```
 
 ### Keyword arguments:
+
 Matched by **name** — order doesn't matter:
+
 ```python
 describe(age=30, city="Seattle", name="Alice")   # same result!
 ```
 
 ### Mix of both (positional must come first):
+
 ```python
 describe("Alice", city="Seattle", age=30)   # ✅
 # describe(city="Seattle", "Alice", 30)     # ❌ positional after keyword
@@ -203,6 +210,7 @@ print(global_var)   # ✅ works
 ```
 
 ### Modifying a global variable inside a function:
+
 ```python
 count = 0
 
@@ -234,6 +242,7 @@ outer()   # prints 10
 ```
 
 ### `nonlocal` for modifying outer variable:
+
 ```python
 def counter():
     count = 0

@@ -22,6 +22,7 @@ print(square(5))   # 25
 ```
 
 ### Lambda syntax:
+
 ```
 lambda arguments: expression
          │              │
@@ -48,6 +49,7 @@ print(greet())   # Hello!
 ```
 
 ### Where lambdas shine — as inline functions:
+
 ```python
 # Sort a list of tuples by second element
 pairs = [(1, 3), (2, 1), (4, 2)]
